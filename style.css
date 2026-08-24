@@ -1,0 +1,245 @@
+/* ============================================================
+   style.css — Estilos del portafolio
+   Diseño limpio, responsive y con modo oscuro/claro
+   mediante variables CSS.
+   ============================================================ */
+
+/* ---------- Variables de tema (claro por defecto) ---------- */
+:root {
+  --fondo: #f5f7fa;
+  --texto: #1e2430;
+  --texto-suave: #5a6474;
+  --tarjeta: #ffffff;
+  --borde: #e2e6ec;
+  --acento: #3b82f6;
+  --acento-suave: rgba(59, 130, 246, 0.12);
+}
+
+/* Modo oscuro (se activa agregando .oscuro al <body>) */
+body.oscuro {
+  --fondo: #12161f;
+  --texto: #e8ecf3;
+  --texto-suave: #9aa4b5;
+  --tarjeta: #1b2230;
+  --borde: #2a3345;
+  --acento: #60a5fa;
+  --acento-suave: rgba(96, 165, 250, 0.15);
+}
+
+/* ---------- Base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+  transition: background 0.25s, color 0.25s;
+}
+
+a {
+  color: var(--acento);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Botón de tema ---------- */
+#btn-tema {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  font-size: 1.25rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  border: 1px solid var(--borde);
+  background: var(--tarjeta);
+  color: inherit;
+  cursor: pointer;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding: 4.5rem 1rem 3rem;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--acento);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+.titulo {
+  color: var(--texto-suave);
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+}
+
+.hero-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+/* ---------- Secciones ---------- */
+.seccion {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.seccion h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  /* Pequeña barra de acento junto al título */
+  padding-left: 0.75rem;
+  border-left: 4px solid var(--acento);
+}
+
+/* ---------- Habilidades ---------- */
+.grid-habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.habilidad {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+}
+
+.habilidad span:first-child {
+  font-size: 1.3rem;
+}
+
+/* ---------- Repos ---------- */
+.grid-repos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.repo {
+  display: flex;
+  flex-direction: column;
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 1.1rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.repo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.repo h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.repo p.descripcion {
+  flex-grow: 1; /* Empuja los metadatos hacia abajo */
+  color: var(--texto-suave);
+  font-size: 0.92rem;
+  margin-bottom: 0.75rem;
+}
+
+.repo .meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}
+
+.lenguaje-punto {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+}
+
+/* ---------- Estados (loading / error) ---------- */
+.estado {
+  text-align: center;
+  padding: 2rem;
+  color: var(--texto-suave);
+}
+.estado.error {
+  color: #ef4444;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--borde);
+  border-top-color: var(--acento);
+  border-radius: 50%;
+  animation: girar 0.7s linear infinite;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+@keyframes girar {
+  to { transform: rotate(360deg); }
+}
+
+/* ---------- Contacto ---------- */
+.lista-contacto {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.lista-contacto a {
+  font-weight: 500;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--borde);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .hero {
+    padding: 3.5rem 1rem 2rem;
+  }
+  .seccion {
+    padding: 2rem 1rem;
+  }
+  .grid-repos {
+    grid-template-columns: 1fr;
+  }
+}

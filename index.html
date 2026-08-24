@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio personal de Lucas Saldivia Belmar — Estudiante de Ingeniería en Informática" />
+  <title>Lucas Saldivia Belmar | Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Botón modo oscuro / claro -->
+  <button id="btn-tema" aria-label="Cambiar tema">🌙</button>
+
+  <!-- ============ HEADER / HERO ============ -->
+  <header class="hero">
+    <!-- Avatar (se llena desde data.js) -->
+    <img id="avatar" class="avatar" src="" alt="Foto de perfil" />
+    <h1 id="nombre"></h1>
+    <p class="titulo" id="titulo"></p>
+    <div class="hero-links">
+      <a id="link-github-hero" href="#" target="_blank" rel="noopener">GitHub</a>
+      <a id="link-email-hero" href="#">Email</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="seccion" id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p id="bio"></p>
+    </section>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section class="seccion" id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="grid-habilidades" id="lista-habilidades">
+        <!-- Se llena dinámicamente desde data.js -->
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS / REPOS ============ -->
+    <section class="seccion" id="proyectos">
+      <h2>Proyectos</h2>
+
+      <!-- Estado de carga -->
+      <div id="repos-loading" class="estado">
+        <span class="spinner"></span> Cargando repositorios...
+      </div>
+
+      <!-- Mensaje de error (rate limit / fallo de red) -->
+      <div id="repos-error" class="estado error" hidden>
+        ⚠️ No se pudieron cargar los repositorios.
+        Puede que se haya alcanzado el límite de la API pública de GitHub.
+        <a href="#" id="link-github-error" target="_blank" rel="noopener">Ver mis repos directamente en GitHub →</a>
+      </div>
+
+      <!-- Grid de repos -->
+      <div class="grid-repos" id="lista-repos"></div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="seccion" id="contacto">
+      <h2>Contacto</h2>
+      <ul class="lista-contacto">
+        <li><a id="c-email" href="#"></a></li>
+        <li><a id="c-github" href="#" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a id="c-linkedin" href="#" target="_blank" rel="noopener" hidden>LinkedIn</a></li>
+        <!-- Otras redes se agregan dinámicamente aquí -->
+        <li id="c-otras"></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con HTML, CSS y JavaScript vanilla · <span id="anio"></span></p>
+  </footer>
+
+  <!-- Orden importante: data.js primero, script.js después -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
