@@ -4,13 +4,13 @@
 ![Estado](https://img.shields.io/badge/Estado-En_Constante_Actualización-brightgreen)
 ![Perfil](https://img.shields.io/badge/Perfil-Ingeniería_Informática_|_UX/UI-purple)
 
-Bienvenido/a a mi portafolio profesional. Aquí reúno mis proyectos más relevantes en **desarrollo de software**, **arquitecturas distribuidas**, **bases de datos** y soluciones aplicadas de **Inteligencia Artificial**, con un enfoque integral entre ingeniería y experiencia de usuario (UX/UI).
+Bienvenido/a a mi portafolio profesional. Aquí reúno mis proyectos más relevantes en **desarrollo de software**, **arquitecturas distribuidas**, **bases de datos** e **investigación/testing con Inteligencia Artificial**, con un enfoque integral entre ingeniería y experiencia de usuario (UX/UI).
 
 ---
 
 ## 🌐 Demo & Enlaces
 
-- 🔗 **Sitio Web / Portafolio:** [Ver Demo en Vivo](https://portafolio-ingenieria-informatica.vercel.app/) *(Actualizar con tu enlace desplegado)*
+- 🔗 **Sitio Web / Portafolio:** [Ver Demo en Vivo](https://portafolio-ingenieria-informatica.vercel.app/) *(Actualizar con tu enlace)*
 - 👤 **GitHub Profile:** [@lucsaldivia-ux](https://github.com/lucsaldivia-ux)
 
 ---
@@ -21,7 +21,6 @@ Bienvenido/a a mi portafolio profesional. Aquí reúno mis proyectos más releva
 | :--- | :--- | :--- | :--- |
 | **Proyecto Full Stack (Microservicios)** | Arquitectura Distribuida & Full Stack | API Gateway, Microservicios, JWT, Docker, Frontend Web | [📂 Ver Repo](https://github.com/lucsaldivia-ux/ProyectoGestionParcial2) |
 | **Servicio Técnico Full Stack** | Desarrollo Web & Gestión | Frontend, API REST, Base de Datos Relacional, CRUD | [📂 Ver Repo](https://github.com/lucsaldivia-ux/Proyecto_Servicio_tecnico_fullstack) |
-| **Ingeniería de Soluciones con IA** | IA Aplicada & Software | Python, LLMs/RAG, APIs de ML, Vector DBs | [📂 Ver Repo](https://github.com/lucsaldivia-ux/Ingenier-a-de-Soluciones-con-Inteligencia-Artificial) |
 | **Pruebas con IA (Proyecto Manantial)** | AI Evals & QA Testing *(WIP)* | Python, Prompt Engineering, Testing Automatizado, AI Evals | [📂 Ver Repo](https://github.com/lucsaldivia-ux/PruebasConInteligenciaArtificial) |
 | **Bases de Datos & PL/SQL** | BD Relacionales & Consultas | SQL, PL/SQL, Oracle/PostgreSQL, Joins, Excepciones | [📂 Ver Repo](https://github.com/lucsaldivia-ux) |
 
@@ -34,9 +33,8 @@ Bienvenido/a a mi portafolio profesional. Aquí reúno mis proyectos más releva
 - **Arquitectura de Software:** Sistemas distribuidos, patrón API Gateway, arquitectura de microservicios y autenticación JWT.
 - **Bases de Datos:** Modelado relacional, consultas SQL avanzadas, programación en PL/SQL, procedimientos almacenados y manejo de excepciones.
 
-### 🤖 Inteligencia Artificial & Data
-- **AI Engineering:** Integración de modelos generativos (LLMs), arquitecturas RAG y consumo de APIs de IA.
-- **AI Testing & Evals:** Ingeniería de Prompts, evaluación de calidad de salidas estructuradas y automatización de pruebas para el Proyecto Manantial.
+### 🤖 Inteligencia Artificial & QA Testing
+- **AI Testing & Evals:** Evaluación de calidad de modelos de lenguaje, ingeniería de prompts, validación de salidas estructuradas y automatización de pruebas para el **Proyecto Manantial**.
 
 ### 🎨 Experiencia de Usuario (UX/UI)
 - **Investigación & Estrategia:** User Research, Wireframing, Arquitectura de Información.
