@@ -10,7 +10,7 @@ Bienvenido/a a mi portafolio profesional. Aquí reúno mis proyectos más releva
 
 ## 🌐 Demo & Enlaces
 
-- 🔗 **Sitio Web / Portafolio:** [Ver Demo en Vivo](https://portafolio-ingenieria-informatica.vercel.app/) *(Actualizar con tu enlace)*
+- 🔗 **Sitio Web / Portafolio:** [https://lucsaldivia-ux.github.io/portafolio-ingenieria-informatica/)
 - 👤 **GitHub Profile:** [@lucsaldivia-ux](https://github.com/lucsaldivia-ux)
 
 ---
