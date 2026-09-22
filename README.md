@@ -10,7 +10,7 @@ Sitio web y repositorio central de mi portafolio profesional. Aquí presento una
 
 ## 🌐 Demo / Sitio en Vivo
 
-- 🔗 **Sitio Web:** [Tusitio.com / Vercel Link](https://portafolio-ingenieria-informatica.vercel.app/) *(Reemplazar con tu enlace)*
+- 🔗 **Sitio Web:** [https://lucsaldivia-ux.github.io/portafolio-ingenieria-informatica/)
 
 ---
 
